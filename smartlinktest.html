@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Link UI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: black;
+      color: white;
+      margin-top: 50px;
+    }
+    .button-container {
+      margin-top: 20px;
+    }
+    .platform-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      margin: 10px auto;
+      padding: 10px;
+      background-color: red;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .platform-button svg {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+    .platform-button:hover {
+      background-color: #aa0000;
+    }
+    .admin-only {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Smart Link UI</h1>
+  <div class="button-container">
+    <a class="platform-button" href="LINK_TO_SPOTIFY" target="_blank">
+      <svg viewBox="0 0 167.5 167.5" xmlns="http://www.w3.org/2000/svg">
+        https://cdns.iconmonstr.com/wp-content/releases/preview/2017/240/iconmonstr-spotify-1.png
+      </svg>
+      Spotify
+    </a>
+    <a class="platform-button" href="LINK_TO_APPLE_MUSIC" target="_blank">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        https://cdns.iconmonstr.com/wp-content/releases/preview/2013/240/iconmonstr-apple-os-1.png
+      </svg>
+      Apple Music
+    </a>
+    <a class="platform-button" href="LINK_TO_SOUNDCLOUD" target="_blank">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        https://cdns.iconmonstr.com/wp-content/releases/preview/2012/240/iconmonstr-soundcloud-1.png
+      </svg>
+      SoundCloud
+    </a>
+    <a class="platform-button" href="LINK_TO_BANDCAMP" target="_blank">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        https://corfie.cc/imgs/bandcamp.png
+      </svg>
+      Bandcamp
+    </a>
+    <a class="platform-button" href="LINK_TO_YOUTUBE" target="_blank">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        https://cdns.iconmonstr.com/wp-content/releases/preview/2013/240/iconmonstr-youtube-6.png
+      </svg>
+      YouTube
+    </a>
+    <a class="platform-button" href="LINK_TO_YOUTUBE_MUSIC" target="_blank">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        https://img.icons8.com/?size=256&id=Mw6P3tmWMfOB&format=png
+      </svg>
+      YouTube Music
+    </a>
+  </div>
+  <div id="adminSection" class="admin-only">
+    <h2>Admin Section</h2>
+    <!-- Add any admin controls here -->
+  </div>
+  <script>
+    const isAdmin = true; // Change this to false for non-admin users
+
+    if (isAdmin) {
+      document.getElementById('adminSection').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+	background-color: #ffffff;
+	background-image: url("imgs/raindrops.png");
+	overflow-y: hidden;
+	display: flex;
+	justify-content: center;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+#wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: var(--viewport-height);
+}
+
+#main {
+	display: flex;
+	margin: 0;
+}
+
+#main {
+	--alignment: center;
+	--flex-alignment: center;
+	--indent-left: 1;
+	--indent-right: 1;
+	--margin-left: auto;
+	--margin-right: auto;
+	--border-radius-tl: 0;
+	--border-radius-tr: 0;
+	--border-radius-br: 0;
+	--border-radius-bl: 0;
+	text-align: var(--alignment);
+}
+
+#image01 .frame {
+	width: 15rem;
+}
+
+#main > .inner {
+	--spacing: 0.75rem;
+}
+
+#main > .inner > * {
+	margin-top: var(--spacing);
+	margin-bottom: var(--spacing);
+}
+
+:root {
+	--viewport-height: 100vh;
+}
+
+#icons01 a svg {
+	fill: #ffffff;
+}
+
+#icons01 svg {
+	width: 35px;
+	height: 35px;
+  fill: #FFD1DC;
+}
+
+#icons01 {
+	font-size: 1.25em;
+	display: flex;
+	width: 635px;
+	justify-content: space-evenly;
+}
+
+/*AUGHHHH I THINK IM FINALLY DONE WITH THIS SHIT OH MY FUCKING GOOOOOOOOOOODdDDD
+also, the bottom rules here are for mobile devices, in case anything messes up, feel free to adjust it to your liking*/
+
+@media screen and (max-width: 600px) {
+	#icons01 {
+		width: 550px;
+	}
+	.images img {
+		width: 75%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#icons01 {
+		width: 500px;
+	}
+	.images img {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#icons01 {
+		width: 420px;
+	}
+	.images img {
+		width: 70%;
+	}
+}
